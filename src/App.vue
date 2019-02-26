@@ -1,16 +1,26 @@
 <template>
   <div id="app">
-    <StartUp msg="Welcome to ECom Desktop Teaching Application"/>
+    <el-container>
+      <el-main>
+        <router-view></router-view>
+      </el-main>
+    </el-container>
   </div>
 </template>
 
 <script>
-import StartUp from './components/StartUp.vue'
+// import StartUp from './components/StartUp.vue'
+// import Login from './components/login/Login.vue'
 
 export default {
   name: 'app',
   components: {
-    StartUp
+    // StartUp,
+    // Login
+  },
+
+  created() {
+    this.$router.push('start');
   }
 }
 </script>

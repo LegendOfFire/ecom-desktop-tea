@@ -1,7 +1,9 @@
 <template>
   <div>
     <h3>{{ msg }}</h3>
-    <router-link :to="{name: 'login'}">Click to Login</router-link>
+    <el-button type="primary" round>
+      <router-link :to="{name: 'login'}">Click to Login</router-link>
+    </el-button>
   </div>
 </template>
 

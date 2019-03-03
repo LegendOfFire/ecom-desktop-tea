@@ -3,6 +3,9 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Start from './components/Start.vue'
 import Login from './components/login/Login.vue'
+import Settings from './components/login/Settings.vue'
+import Navigation from './components/navigation/Navigation.vue'
+import Functions from './components/funtions/Functions.vue'
 
 Vue.use(Router)
 
@@ -22,6 +25,21 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: Settings
+    },
+    {
+      path: '/navigation',
+      name: 'navigation',
+      component: Navigation
+    },
+    {
+      path: '/functions',
+      name: 'functions',
+      component: Functions
     },
     {
       path: '/about',
